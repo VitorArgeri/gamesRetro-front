@@ -2,8 +2,8 @@
 "use client";
 
 import { useState } from "react";
-import LoginForm from "@/components/auth/loginForm";
-import RegisterForm from "@/components/auth/registerForm";
+import LoginForm from "./components/auth/loginForm";
+import RegisterForm from "./components/auth/registerForm";
 import styles from "./page.module.css";
 
 export default function AuthPage() {

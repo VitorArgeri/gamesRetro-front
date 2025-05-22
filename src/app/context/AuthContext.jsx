@@ -3,7 +3,7 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
-import { login, register, logout } from "../services/authService";
+import { login, register, logout } from "@/app/services/authServices";
 
 // Criação do contexto de autenticação
 const AuthContext = createContext({});
@@ -48,7 +48,7 @@ export function AuthProvider({ children }) {
                 setUser(data.userExists);
 
                 // Redirecionar para dashboard
-                router.push("/dashboard");
+                router.push("/games");
                 return { success: true };
             } else {
                 return {
